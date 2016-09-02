@@ -1,0 +1,14 @@
+Sep 02, 2016 9:47:57 AM server.EchoServer runServer
+INFO: Starting the Server
+Sep 02, 2016 9:47:57 AM server.EchoServer runServer
+SEVERE: null
+java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.bind(ServerSocket.java:329)
+	at server.EchoServer.runServer(EchoServer.java:48)
+	at server.EchoServer.main(EchoServer.java:74)
+
