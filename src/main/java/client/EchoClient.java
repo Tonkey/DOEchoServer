@@ -36,6 +36,7 @@ public class EchoClient extends Observable {
         output = new PrintWriter(socket.getOutputStream(), true);  //Set to true, to get auto flush behaviour
         isStopped = false;
         returnedMsg = "";
+        new recieveTask(this).start();
     }
 
     public void send(String msg) {
@@ -77,10 +78,10 @@ public class EchoClient extends Observable {
             
             
 //            
-            System.out.println("Sending 'Hello world'");
-            tester.send("Hello World");
-            System.out.println("Waiting for a reply");
-            System.out.println("Received: " + tester.receive()); //Important Blocking call
+//            System.out.println("Sending 'Hello world'");
+//            tester.send("Hello World");
+//            System.out.println("Waiting for a reply");
+//            System.out.println("Received: " + tester.receive()); //Important Blocking call
 //            
 //            
 //            
@@ -127,7 +128,7 @@ class recieveTask extends Thread{
     @Override
     public void run()
     {
-//        System.out.println("inside recieve task");
+        System.out.println("inside recieve task");
         String msg = ec.receive();
         
         ec.notifyObservers(msg);

@@ -1,32 +1,12 @@
-Sep 02, 2016 10:54:35 AM server.EchoServer runServer
+Sep 05, 2016 1:07:03 PM server.EchoServer runServer
 INFO: Starting the Server
-Sep 02, 2016 10:54:35 AM server.EchoServer runServer
+Sep 05, 2016 1:07:03 PM server.EchoServer runServer
 INFO: Server started. Listening on: 7777, bound to: localhost
-Sep 02, 2016 10:54:36 AM server.EchoServer runServer
-INFO: Connected to a client
-Sep 02, 2016 10:54:36 AM server.EchoServer runServer
+Sep 05, 2016 1:07:06 PM server.EchoServer runServer
+INFO: Client Thread-1 connected to the server
+Sep 05, 2016 1:07:06 PM server.EchoServer runServer
 INFO: Current amount of clients connected: 1
-Sep 02, 2016 10:54:37 AM server.EchoServer removeHandler
-INFO: Client: Thread-2 disconnected
-Sep 02, 2016 10:54:37 AM server.EchoServer runServer
-INFO: Connected to a client
-Sep 02, 2016 10:54:37 AM server.EchoServer removeHandler
-INFO: Remaining amount of clients connected: 1
-Sep 02, 2016 10:54:37 AM server.EchoServer runServer
-INFO: Current amount of clients connected: 1
-Sep 02, 2016 10:54:37 AM server.EchoServer runServer
-INFO: Connected to a client
-Sep 02, 2016 10:54:37 AM server.EchoServer runServer
-INFO: Current amount of clients connected: 2
-Sep 02, 2016 10:54:37 AM server.EchoServer runServer
-INFO: Connected to a client
-Sep 02, 2016 10:54:37 AM server.EchoServer runServer
-INFO: Current amount of clients connected: 3
-Sep 02, 2016 10:54:37 AM server.EchoServer runServer
-INFO: Connected to a client
-Sep 02, 2016 10:54:37 AM server.EchoServer runServer
-INFO: Current amount of clients connected: 4
-Sep 02, 2016 10:54:37 AM server.EchoServer runServer
-INFO: Connected to a client
-Sep 02, 2016 10:54:37 AM server.EchoServer runServer
-INFO: Current amount of clients connected: 5
+Sep 05, 2016 1:07:17 PM server.EchoServer removeHandler
+INFO: Client: Thread-1 disconnected
+Sep 05, 2016 1:07:17 PM server.EchoServer removeHandler
+INFO: Remaining amount of clients connected: 0

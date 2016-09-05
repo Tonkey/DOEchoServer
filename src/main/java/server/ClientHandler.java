@@ -36,7 +36,7 @@ public class ClientHandler extends Thread{
     public void run(){
         
         try {
-        
+        send("Welcome to the server " + this.getName());
         String message = input.nextLine(); //IMPORTANT blocking call
         System.out.println(String.format("Received the message: %1$S ", message));
         while (!message.equals(ProtocolStrings.STOP)) {

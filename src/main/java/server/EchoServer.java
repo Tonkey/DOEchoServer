@@ -48,7 +48,7 @@ public class EchoServer {
                 Socket socket = serverSocket.accept(); //Important Blocking call
                 ClientHandler client = new ClientHandler(socket, this);
                 clients.add(client);
-                Logger.getLogger(Log.LOG_NAME).log(Level.INFO, "Connected to a client");
+                Logger.getLogger(Log.LOG_NAME).log(Level.INFO, "Client " + client.getName() + " connected to the server");
                 Logger.getLogger(Log.LOG_NAME).log(Level.INFO, "Current amount of clients connected: " + clients.size());
                 
 
