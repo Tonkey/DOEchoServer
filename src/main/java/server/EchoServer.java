@@ -45,7 +45,7 @@ public class EchoServer {
             serverSocket = new ServerSocket();
             serverSocket.bind(new InetSocketAddress(ip, port));
             do {
-                Socket socket = serverSocket.accept(); //Important Blocking call
+                Socket socket = serverSocket.accept();
                 ClientHandler client = new ClientHandler(socket, this);
                 clients.add(client);
                 Logger.getLogger(Log.LOG_NAME).log(Level.INFO, "Client " + client.getName() + " connected to the server");
